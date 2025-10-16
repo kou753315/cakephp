@@ -1,5 +1,8 @@
+# CakePHP CI workflow
+# Runs composer install, phpunit tests with SQLite, and uploads JUnit results
 name: CI
 
+# Trigger on push to main/master branches or on pull requests
 on:
   push:
     branches: ["main", "master"]
@@ -8,6 +11,7 @@ on:
 
 jobs:
   php-tests:
+    # Run on windows-latest for now, can be extended to matrix later
     runs-on: windows-latest
 
     steps:
@@ -31,11 +35,13 @@ jobs:
 
       - name: Install dependencies (cake)
         working-directory: cake
+        # Install dependencies in cake/ subdirectory (no dev, no suggest, dist preferred)
         run: composer install --no-progress --prefer-dist
 
       - name: Run tests (SQLite)
         working-directory: cake
         env:
+          # Use SQLite for test DB (automatically configured in config/app_local.php)
           USE_SQLITE: 'true'
         run: |
           vendor\\bin\\phpunit.bat --log-junit ../test-results.xml -v
