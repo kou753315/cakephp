@@ -1,5 +1,4 @@
 name: CI
-name: CI
 
 on:
   push:
@@ -46,14 +45,3 @@ jobs:
         with:
           name: junit-report
           path: test-results.xml
-
-      - name: Upload JUnit results
-        uses: actions/upload-artifact@v4
-        with:
-          name: junit-report
-          path: test-results.xml
-        - name: Upload JUnit results
-          uses: actions/upload-artifact@v4
-          with:
-            name: junit-report
-            path: test-results.xml
