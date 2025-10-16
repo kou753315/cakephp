@@ -1,0 +1,12 @@
+# Ignore test result artifacts and temporary health output
+test-results*.xml
+health*.html
+
+# Ignore vendor produced files at repo root (if any)
+/vendor
+
+# OS and editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
