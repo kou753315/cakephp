@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="10" assertions="23" errors="0" warnings="0" failures="0" skipped="0" time="0.223001">
+    <testsuite name="app" tests="10" assertions="23" errors="0" warnings="0" failures="0" skipped="0" time="0.223001">
+      <testsuite name="App\Test\TestCase\ApplicationTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\ApplicationTest.php" tests="4" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.036059">
+        <testcase name="testBootstrap" class="App\Test\TestCase\ApplicationTest" classname="App.Test.TestCase.ApplicationTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\ApplicationTest.php" line="41" assertions="3" time="0.015525"/>
+        <testcase name="testBootstrapInDebug" class="App\Test\TestCase\ApplicationTest" classname="App.Test.TestCase.ApplicationTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\ApplicationTest.php" line="58" assertions="1" time="0.000939"/>
+        <testcase name="testBootstrapPluginWithoutHalt" class="App\Test\TestCase\ApplicationTest" classname="App.Test.TestCase.ApplicationTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\ApplicationTest.php" line="73" assertions="1" time="0.014558"/>
+        <testcase name="testMiddleware" class="App\Test\TestCase\ApplicationTest" classname="App.Test.TestCase.ApplicationTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\ApplicationTest.php" line="93" assertions="3" time="0.005037"/>
+      </testsuite>
+      <testsuite name="App\Test\TestCase\Controller\PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" tests="6" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="0.186942">
+        <testcase name="testDisplay" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="38" assertions="3" time="0.047322"/>
+        <testcase name="testMissingTemplate" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="52" assertions="2" time="0.022426"/>
+        <testcase name="testMissingTemplateInDebug" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="66" assertions="4" time="0.045922"/>
+        <testcase name="testDirectoryTraversalProtection" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="82" assertions="2" time="0.036012"/>
+        <testcase name="testCsrfAppliedError" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="94" assertions="2" time="0.030717"/>
+        <testcase name="testCsrfAppliedOk" class="App\Test\TestCase\Controller\PagesControllerTest" classname="App.Test.TestCase.Controller.PagesControllerTest" file="D:\Work\Test\cakephp\cake\tests\TestCase\Controller\PagesControllerTest.php" line="107" assertions="2" time="0.004543"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
